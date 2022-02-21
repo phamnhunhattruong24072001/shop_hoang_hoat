@@ -16,5 +16,8 @@ use App\Http\Controllers\Clients\HomeController;
 
 Route::prefix('/')->group(function () {
     Route::get('/', [HomeController::class, 'index'])->name('home');
-    
+
+    Route::prefix('/shop')->group(function () {
+       
+    });
 });
